@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页五子棋</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>网页五子棋</h1>
+        
+        <div class="game-info">
+            <div class="current-player">
+                当前玩家: <span id="player">黑子</span>
+            </div>
+            <div class="game-status" id="status">游戏进行中</div>
+            <button id="restart" class="restart-btn">重新开始</button>
+        </div>
+        
+        <div class="board-container">
+            <canvas id="gomoku-board" width="600" height="600"></canvas>
+        </div>
+        
+        <div class="instructions">
+            <h3>游戏规则：</h3>
+            <ul>
+                <li>黑子先行，双方轮流落子</li>
+                <li>先在横向、纵向或斜向连成五子者获胜</li>
+                <li>点击棋盘交叉点放置棋子</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
